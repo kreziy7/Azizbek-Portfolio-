@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azizbek - Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="styel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-text">Azizbek</div>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Azizbek</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Bosh sahifa</a>
+                <a href="#about" class="nav-link">Men haqimda</a>
+                <a href="#skills" class="nav-link">Ko'nikmalar</a>
+                <a href="#projects" class="nav-link">Loyihalar</a>
+                <a href="#contact" class="nav-link">Aloqa</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+            <div class="floating-shape shape-6"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Salom, men</span>
+                        <span class="title-name">Azizbek</span>
+                        <span class="title-role">Frontend Developer</span>
+                    </h1>
+                    <p class="hero-description">
+                        HTML va CSS bo'yicha kuchli bilimga ega bo'lgan frontend dasturchiman. 
+                        Chiroyli va zamonaviy web saytlar yaratishga ixtisoslashganman.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Loyihalarim</a>
+                        <a href="#contact" class="btn btn-secondary">Bog'lanish</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <div class="image-overlay"></div>
+                        <img src="./aaizbek.jpg" alt="Azizbek">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Men haqimda</h2>
+                <p class="section-subtitle">Mening yo'lim va maqsadlarim</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        Men Azizbek, frontend development sohasida faol ishlaydigan dasturchiman. 
+                        HTML va CSS texnologiyalarini chuqur o'rganib, zamonaviy web saytlar yaratishga 
+                        ixtisoslashganman.
+                    </p>
+                    <p class="about-paragraph">
+                        Mening asosiy maqsadim - foydalanuvchilar uchun qulay va chiroyli interfeys 
+                        yaratish. Har bir loyihani diqqat bilan tayyorlab, professional darajada 
+                        taqdim etishga harakat qilaman.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Yillik tajriba</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Yakunlangan loyiha</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Mijoz mamnuniyati</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <div class="image-overlay"></div>
+                        <img src="./aaizbek.jpg" alt="Azizbek">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ko'nikmalar</h2>
+                <p class="section-subtitle">Mening texnik bilimlarim</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <span class="skill-symbol">HTML</span>
+                    </div>
+                    <h3 class="skill-title">HTML</h3>
+                    <p class="skill-description">Semantik va toza HTML kod yozish</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90%"></div>
+                        </div>
+                        <span class="progress-text">90%</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <span class="skill-symbol">CSS</span>
+                    </div>
+                    <h3 class="skill-title">CSS</h3>
+                    <p class="skill-description">Responsive va zamonaviy dizayn</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="80%"></div>
+                        </div>
+                        <span class="progress-text">80%</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <span class="skill-symbol">📱</span>
+                    </div>
+                    <h3 class="skill-title">Responsive Design</h3>
+                    <p class="skill-description">Barcha qurilmalarda ishlash</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85%"></div>
+                        </div>
+                        <span class="progress-text">85%</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <span class="skill-symbol">✨</span>
+                    </div>
+                    <h3 class="skill-title">Animatsiyalar</h3>
+                    <p class="skill-description">CSS animatsiyalar va effektlar</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="75%"></div>
+                        </div>
+                        <span class="progress-text">75%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Loyihalar</h2>
+                <p class="section-subtitle">Mening eng yaxshi ishlarim</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <span class="image-text">Loyiha 1</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-link">Ko'rish</a>
+                                <a href="#" class="project-link">Kod</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Biznes Website</h3>
+                        <p class="project-description">Zamonaviy biznes website responsive dizayn bilan</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <span class="image-text">Loyiha 2</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-link">Ko'rish</a>
+                                <a href="#" class="project-link">Kod</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Portfolio Template</h3>
+                        <p class="project-description">Professional portfolio template chiroyli animatsiyalar bilan</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <span class="image-text">Loyiha 3</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-link">Ko'rish</a>
+                                <a href="#" class="project-link">Kod</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Landing Page</h3>
+                        <p class="project-description">Mahsulot uchun ta'sirchan landing page</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bog'lanish</h2>
+                <p class="section-subtitle">Keling, birgalikda loyiha ustida ishlaymiz</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>azizbek@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-text">
+                            <h4>Telefon</h4>
+                            <p>+998 90 123 45 67</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <h4>Manzil</h4>
+                            <p>Toshkent, O'zbekiston</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Telegram</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Ismingiz" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Email manzilingiz" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Mavzu" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input" rows="5" placeholder="Xabaringiz" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Xabar yuborish</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Azizbek. Barcha huquqlar himoyalangan.</p>
+                <div class="footer-links">
+                    <a href="#home">Bosh sahifa</a>
+                    <a href="#about">Men haqimda</a>
+                    <a href="#contact">Aloqa</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.querySelector('.nav-menu');
+                const hamburger = document.querySelector('.hamburger');
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        document.querySelector('.hamburger').addEventListener('click', toggleMenu);
+    </script>
+</body>
+</html>
